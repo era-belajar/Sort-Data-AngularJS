@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sort by Javascript</title>
+	</head>
+<body>
+	</br>
+		<table border="1" width="50%" align="center">
+			<tr>
+				<td align="center"><h4><p> Mengurutkan Nama Hewan Dengan Method Sort </p></h4></td>
+			</tr>
+				<td align="center"><p><h3>Kucing,Singa,Beruang,Rusa,Kijang</h3></p></td>
+			<tr>
+				<td align="center"><button onClick="hewanku()" value="Submit">Submit</button> 
+					<h3><p id="data"></p></h3>
+				</td>
+			</tr>
+		</table>
+	<script>
+	var hewan = ["Kucing","Singa","Beruang","Rusa","Kijang"];
+		
+		function hewanku(){
+					hewan.sort();
+					document.getElementById("data").innerHTML = hewan;
+		}
+
+	</script>
+</body>
+</html>
